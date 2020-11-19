@@ -4,7 +4,7 @@ import com.team766.framework.AutonomousProcedureUtils;
 import com.team766.framework.Procedure;
 import com.team766.framework.Scheduler;
 import com.team766.framework.LaunchedContext;
-import com.team766.frc2020.mechanisms.*;
+//import com.team766.frc2020; //Doesn't work; ignore
 import com.team766.hal.MyRobot;
 import com.team766.hal.RobotProvider;
 import com.team766.logging.Category;
@@ -17,7 +17,7 @@ import com.team766.web.WebServer;
 
 public class Robot extends MyRobot {
 	// Declare mechanisms here
-	
+	public static Drive drive;
 	
 	private static OI m_oi;
 	
@@ -43,7 +43,7 @@ public class Robot extends MyRobot {
 	@Override
 	public void robotInit() {
 		// Initialize mechanisms here
-		
+		drive = new Drive();
 		
 		m_oi = new OI();
 	}
