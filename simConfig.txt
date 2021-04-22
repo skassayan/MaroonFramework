@@ -36,5 +36,12 @@
 	},
 	"lineSensorRight": {
 		"port": 4
-	}
+	},
+	"weapon": {
+        "port": 0
+    },
+    "weaponEncoder": {
+        "ports": [4, 5],
+        "distancePerPulse": 1.0
+    }
 }

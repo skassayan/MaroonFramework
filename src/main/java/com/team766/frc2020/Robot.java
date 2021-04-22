@@ -3,6 +3,10 @@ package com.team766.frc2020;
 import com.team766.framework.AutonomousProcedureUtils;
 import com.team766.framework.Procedure;
 import com.team766.framework.Scheduler;
+import com.team766.frc2020.mechanisms.Flyswatter;
+import com.team766.frc2020.mechanisms.Launcher;
+import com.team766.frc2020.mechanisms.Intake;
+import com.team766.frc2020.mechanisms.LineSensors;
 import com.team766.framework.LaunchedContext;
 //import com.team766.frc2020; //Doesn't work; ignore
 import com.team766.hal.MyRobot;
@@ -18,8 +22,11 @@ import com.team766.web.WebServer;
 public class Robot extends MyRobot {
 	// Declare mechanisms here
 	public static Drive drive;
-	
+	public static Flyswatter flyswatter;
 	private static OI m_oi;
+	public static Launcher launcher;
+	public static Intake intake;
+	public static LineSensors linesensors;
 	
 	private WebServer m_webServer;
 	private AutonomousSelector m_autonSelector;
@@ -38,14 +45,18 @@ public class Robot extends MyRobot {
 		m_autonSelector = new AutonomousSelector(AutonomousModes.class);
 		m_webServer.addHandler("/values", m_autonSelector);
 		m_webServer.start();
+		
 	}
 
 	@Override
 	public void robotInit() {
 		// Initialize mechanisms here
 		drive = new Drive();
-		
+		flyswatter = new Flyswatter();
 		m_oi = new OI();
+		launcher = new Launcher();
+		intake = new Intake();
+		linesensors = new LineSensors();
 	}
 	
 	@Override
