@@ -11,5 +11,7 @@ public enum AutonomousModes {
 	@AutonomousProcedure(procedureClass = Launch.class)
 	Launch,
 	@AutonomousProcedure(procedureClass = DriveDistance.class)
-	DriveDistance
+	DriveDistance,
+	@AutonomousProcedure(procedureClass = FollowLine.class)
+	FollowLine
 }

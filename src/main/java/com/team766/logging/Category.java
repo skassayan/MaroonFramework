@@ -11,6 +11,7 @@ public enum Category {
 	AUTONOMOUS,
 	CONFIGURATION,
 	PROCEDURES,
+	RACCOON,
 	OPERATOR_INTERFACE;
 	
 	private static final Category[] VALUES = Category.values();

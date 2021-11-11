@@ -26,3 +26,4 @@ public class LineSensors extends Mechanism {
 	public boolean getLineSensorRight() {
 		return m_lineSensorRight.get();
 	}
+}

@@ -19,6 +19,15 @@
 			"port": 12
 		}
 	},
+	"pulleyMotor": {
+		"port": 1
+	},
+	"leftArm": {
+		"port": 2
+	},
+	"rightArm": {
+		"port": 3
+	},
 	"intakeWheels": {
 		"port": 0
 	},
