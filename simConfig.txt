@@ -2,55 +2,18 @@
 	"logFilePath": "sim_robot_logs",
 	"drive": {
 		"leftMotor": {
-			"port": 6
+			"port": 5
 		},
 		"rightMotor": {
-			"port": 4
-		},
-		"leftEncoder": {
-			"ports": [0, 1],
-			"distancePerPulse": -0.0524
-		},
-		"rightEncoder": {
-			"ports": [2, 3],
-			"distancePerPulse": -0.0524
-		},
-		"gyro": {
-			"port": 12
-		}
+			"port": 8
 	},
 	"pulleyMotor": {
-		"port": 1
-	},
-	"leftArm": {
-		"port": 2
-	},
-	"rightArm": {
-		"port": 3
-	},
-	"intakeWheels": {
-		"port": 0
-	},
-	"intakeArm": {
-		"port": 0
-	},
-	"launch": {
-		"port": 1
-	},
-	"lineSensorLeft": {
-		"port": 2
-	},
-	"lineSensorCenter": {
-		"port": 3
-	},
-	"lineSensorRight": {
 		"port": 4
 	},
-	"weapon": {
-        "port": 0
-    },
-    "weaponEncoder": {
-        "ports": [4, 5],
-        "distancePerPulse": 1.0
-    }
+	"leftArm": {
+		"port": 0
+	},
+	"rightArm": {
+		"port": 1
+	}
 }

@@ -10,7 +10,7 @@ public class DriveSquare extends Procedure {
 	public void run(Context context) {
 		for(int i = 0; i < 4; ++i) {
 			new DriveStraight(1, true).run(context);
-			new TurnAngle().run(context);
+			//new TurnAngle().run(context);
 			//new TurnRight().run(context);
 			log("Yay, you drove in a square");
 		}
